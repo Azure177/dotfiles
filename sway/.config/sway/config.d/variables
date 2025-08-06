@@ -1,0 +1,12 @@
+
+set $mod Mod4
+
+set $left h
+set $down j
+set $up k
+set $right l
+
+set $term foot
+set $menu dmenu
+set $browser app.zen_browser.zen
+set $java org.bluej.BlueJ
