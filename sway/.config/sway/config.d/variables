@@ -10,6 +10,7 @@ set $term foot
 set $menu dmenu
 set $browser app.zen_browser.zen
 set $java org.bluej.BlueJ
+set $office libreoffice
 
-assign [sandbox_app_id="$browser"] workspace number 2
+assign [sandbox_app_id="$browser"] workspace number 10
 

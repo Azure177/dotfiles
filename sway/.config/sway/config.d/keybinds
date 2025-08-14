@@ -4,7 +4,7 @@ bindsym $mod+Return exec $term
 bindsym $mod+q kill
 bindsym $mod+b exec $browser
 bindsym $mod+Shift+b exec $java
-bindsym $mod+t exec $thunar
+bindsym $mod+o exec $office
 
 # Drag floating windows by holding down $mod and left mouse button.
 # Resize them with right mouse button + $mod.

@@ -9,7 +9,7 @@ input type:keyboard
 
 # output * bg #0a0a0f solid_color
 output * bg ~/Pictures/Wallpapers/Cyberpunk-girl.png center
-output eDP-1 resolution 1600x900
+output eDP-1 resolution 1600x900@60Hz
 
 # Border colors (focused, inactive, unfocused, urgent)
 client.focused          #0a0a0f #0a0a0f #7ec07e #7ec07e
