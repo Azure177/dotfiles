@@ -10,3 +10,6 @@ set $term foot
 set $menu dmenu
 set $browser app.zen_browser.zen
 set $java org.bluej.BlueJ
+
+assign [sandbox_app_id="$browser"] workspace number 2
+

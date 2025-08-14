@@ -4,5 +4,6 @@ include ~/.config/sway/config.d/variables
 include ~/.config/sway/config.d/keybinds
 include ~/.config/sway/config.d/input_output
 include ~/.config/sway/config.d/stuff
+exec_always ~/.config/sway/config.d/startup.sh
 
 include /etc/sway/config.d/*
