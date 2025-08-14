@@ -3,7 +3,6 @@
 include ~/.config/sway/config.d/variables
 include ~/.config/sway/config.d/keybinds
 include ~/.config/sway/config.d/input_output
-
-xwayland enable
+include ~/.config/sway/config.d/stuff
 
 include /etc/sway/config.d/*

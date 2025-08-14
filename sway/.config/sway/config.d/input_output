@@ -1,23 +1,31 @@
-
-#vim: filetype=sway
-
 ### Input configuration
 
 input type:keyboard 
 {
-	xkb_options "caps:swapescape"
+    xkb_options "caps:swapescape"
 }
 
 ### Output configuration
 
-output eDP-1 bg ~/Pictures/15184859-small-memory-wallpaper.jpg fill
+# output * bg #0a0a0f solid_color
+output * bg ~/Pictures/Wallpapers/Cyberpunk-girl.png center
+output eDP-1 resolution 1600x900
+
+# Border colors (focused, inactive, unfocused, urgent)
+client.focused          #0a0a0f #0a0a0f #7ec07e #7ec07e
+client.focused_inactive #0a0a0f #0a0a0f #5fa9d0 #5fa9d0
+client.unfocused        #0a0a0f #0a0a0f #8a8a8a #8a8a8a
+client.urgent           #0a0a0f #0a0a0f #c25c25 #c25c5c
+
+# Fonts
+font pango:JetBrains Mono 12
 
 ### Idle configuration
 
 exec swayidle -w \
-	     timeout 300 'swaylock -f -c 000000' \
-	     timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-	     before-sleep 'swaylock -f -c 000000'
+         timeout 300 'swaylock -f -c 000000' \
+         timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+         before-sleep 'swaylock -f -c 000000'
 
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when

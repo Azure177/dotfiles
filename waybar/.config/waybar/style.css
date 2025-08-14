@@ -1,0 +1,34 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 14px;
+    padding: 0 8px;
+}
+
+window#waybar {
+    background-color: #0e0e0f; /* near-black */
+    color: #cfcfcf; /* default muted white */
+}
+
+/* === Module Colors (Muted Cyberpunk) === */
+#workspaces button {
+    color: #a78bfa; /* muted purple */
+    margin: 0 4px;
+    padding: 2px 8px;
+}
+
+#workspaces button.focused {
+    background-color: #27272a;
+    border-radius: 6px;
+}
+
+#window {
+    color: #a78bfa; /* muted purple */
+    margin: 0 4px;
+    padding: 2px 8px;
+}
+
+/* === Spacing === */
+#pulseaudio, #backlight, #network, #clock{
+    margin: 0 6px;
+}
+

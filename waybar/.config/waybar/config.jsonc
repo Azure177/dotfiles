@@ -1,0 +1,17 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 15,
+  "modules-center": ["sway/workspaces", "sway/window"],
+
+  "sway/workspaces": {
+    "format": "{icon}",
+    "disable-scroll": true,
+    "all-outputs": true
+  },
+
+  "sway/window": {
+      "format": "{title}"
+  }
+}
+

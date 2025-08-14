@@ -16,7 +16,3 @@ vim.o.splitbelow = true
 
 vim.o.termguicolors = true
 vim.o.background = "dark"
-
-vim.g.netrw_liststyle = 3
-vim.g.netrw_browse_split = 3
-
