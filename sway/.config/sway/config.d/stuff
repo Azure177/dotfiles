@@ -11,4 +11,3 @@ bar {
 default_orientation vertical
 
 # apps
-exec mako
