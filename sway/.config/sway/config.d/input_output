@@ -1,9 +1,9 @@
 ### Input configuration
 
-input type:keyboard 
-{
-    xkb_options "caps:swapescape"
-}
+#input type:keyboard 
+#{
+#    xkb_options "caps:swapescape"
+#}
 
 ### Output configuration
 

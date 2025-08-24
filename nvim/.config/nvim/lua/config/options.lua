@@ -1,7 +1,7 @@
 
 vim.o.nu = true
 vim.o.cursorline = true
-vim.o.relativenumber = true
+vim.o.rnu = true
 
 vim.o.tabstop = 4
 vim.o.softtabstop = 4
@@ -16,3 +16,6 @@ vim.o.splitbelow = true
 
 vim.o.termguicolors = true
 vim.o.background = "dark"
+
+vim.g.netrw_banner = 0
+

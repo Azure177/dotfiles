@@ -9,5 +9,6 @@ bar {
 
 # Defaults
 default_orientation vertical
-
-# apps
+mouse_warping container
+title_align center
+exec foot

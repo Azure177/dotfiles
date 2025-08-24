@@ -5,9 +5,8 @@ exec env XDG_CURRENT_DESKTOP sway
 include ~/.config/sway/config.d/variables
 include ~/.config/sway/config.d/keybinds
 include ~/.config/sway/config.d/input_output
-include ~/.config/sway/config.d/stuff
+include ~/.config/sway/config.d/defaults
 
-exec ~/.config/sway/config.d/startup.sh
 exec --no-startup-id /usr/lib/xdg-desktop-portal-wlr
 exec --no-startup-id /usr/lib/xdg-desktop-portal
 
