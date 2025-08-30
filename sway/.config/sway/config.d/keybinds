@@ -3,7 +3,7 @@
 #apps
 bindsym $mod+Return exec $term
 bindsym $mod+q kill
-bindsym $mod+b exec $browser
+bindsym $mod+z exec $browser
 bindsym $mod+Shift+b exec $java
 bindsym $mod+o exec $office
 
