@@ -28,7 +28,10 @@ window#waybar {
 }
 
 /* === Spacing === */
-#pulseaudio, #backlight, #network, #clock{
+#pulseaudio, #backlight, #network, #bluetooth{
     margin: 0 6px;
 }
 
+#bluetooth {
+    color:#5585D8
+}

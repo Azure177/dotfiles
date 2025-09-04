@@ -2,12 +2,17 @@
   "layer": "top",
   "position": "top",
   "height": 30,
+  "modules-left": ["bluetooth"],
   "modules-center": ["sway/workspaces"],
 
   "sway/workspaces": {
     "format": "{icon}",
     "disable-scroll": true,
     "all-outputs": true
+  },
+
+  "bluetooth": {
+      "on-click":"blueman-manager"
   }
 }
 
