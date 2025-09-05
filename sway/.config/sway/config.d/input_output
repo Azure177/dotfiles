@@ -7,8 +7,7 @@
 
 ### Output configuration
 
-# output * bg #0a0a0f solid_color
-output * bg ~/Pictures/Wallpapers/Cyberpunk-girl.png center
+output * bg ~/dotfiles/sway/.config/sway/config.d/Wallpapers/Cyberpunk-girl.png center
 output eDP-1 resolution 1600x900@60Hz
 
 # Border colors (focused, inactive, unfocused, urgent)

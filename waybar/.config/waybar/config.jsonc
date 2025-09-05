@@ -1,18 +1,18 @@
 {
-  "layer": "top",
-  "position": "top",
-  "height": 30,
-  "modules-left": ["bluetooth"],
-  "modules-center": ["sway/workspaces"],
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "modules-center": ["sway/workspaces"],
 
-  "sway/workspaces": {
-    "format": "{icon}",
-    "disable-scroll": true,
-    "all-outputs": true
-  },
+    "sway/workspaces": {
+        "format": "{icon}",
+        "disable-scroll": true,
+        "all-outputs": true
+    }
 
-  "bluetooth": {
-      "on-click":"blueman-manager"
-  }
+    // "bluetooth": {
+    //     "on-click":
+    //     "blueman-manager"
+    // }
 }
 
