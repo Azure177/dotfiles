@@ -6,7 +6,7 @@ set -e
 echo "Starting Setup..."
 
 PKGS="neovim foot stow flatpak tmux ollama sway\
-    sway-bg swaylock swayidle waybar\
+    swaybg swaylock swayidle waybar\
     xdg-desktop-portal-wlr xorg-xwayland\
     grim slurp keyd\
     ttf-jetbrains-mono-nerd"
