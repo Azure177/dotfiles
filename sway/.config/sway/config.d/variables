@@ -11,4 +11,5 @@ set $menu dmenu
 set $browser app.zen_browser.zen
 set $java org.bluej.BlueJ
 set $office libreoffice
+set $file_manager nautilus
 

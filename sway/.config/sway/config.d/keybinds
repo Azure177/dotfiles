@@ -6,6 +6,7 @@ bindsym $mod+q kill
 bindsym $mod+z exec $browser
 bindsym $mod+Shift+b exec $java
 bindsym $mod+o exec $office
+bindsym $mod+Shift+m exec $file_manager
 
 #QOL
 bindsym $mod+mod1+l exec swaylock
