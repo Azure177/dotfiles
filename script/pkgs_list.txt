@@ -1,0 +1,17 @@
+neovim
+foot
+stow
+flatpak
+tmux
+ollama
+sway
+swaybg
+swaylock
+swayidle
+waybar
+xdg-desktop-portal-wlr
+xorg-xwayland
+grim
+slurp
+keyd
+ttf-jetbrains-mono-nerd

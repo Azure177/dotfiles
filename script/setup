@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+mapfile -t PKGS < pkgs_list.txt
+
+my_defaults() {
+    printf "\nset -o vi\n"
+    printf "alias vi='nvim\n'"
+    printf "alias c='clear'\n"
+    printf "export OLLAMA_OFFLINE=true\n"
+    printf "export MANPAGER='nvim +Man!'\n"
+}
+
+# Setup Script
+echo "Starting Setup..."
+
+touch ~/.bashrc
+if ! grep -q "set -o vi" ~/.bashrc; then
+    echo "updating bashrc..."
+    my_defaults >> ~/.bashrc
+fi
+
+echo "installing packages..."
+sudo pacman -S --needed --noconfirm "${PKGS[@]}"
+flatpak install -y app.zen_browser.zen com.github.tchx84.Flatseal
