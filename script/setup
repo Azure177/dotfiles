@@ -1,22 +1,24 @@
 #!/usr/bin/env bash
 
+# Setup Script
 set -euo pipefail
 
-mapfile -t PKGS < pkgs_list.txt
+mapfile -t PKGS < pkgs.txt
 
 my_defaults() {
-    printf "\nset -o vi\n"
-    printf "alias vi='nvim\n'"
-    printf "alias c='clear'\n"
-    printf "export OLLAMA_OFFLINE=true\n"
-    printf "export MANPAGER='nvim +Man!'\n"
+    printf '\n'
+    printf '%s\n' \
+    "set -o vi" \
+    "alias vi='nvim'" \
+    "alias c='clear'" \
+    "export OLLAMA_OFFLINE=true" \
+    "export MANPAGER='nvim +Man!'"
 }
 
-# Setup Script
 echo "Starting Setup..."
 
 touch ~/.bashrc
-if ! grep -q "set -o vi" ~/.bashrc; then
+if [[! grep -q "set -o vi" ~/.bashrc ]]; then
     echo "updating bashrc..."
     my_defaults >> ~/.bashrc
 fi
