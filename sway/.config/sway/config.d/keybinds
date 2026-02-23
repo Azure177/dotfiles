@@ -9,7 +9,7 @@ bindsym $mod+o exec $office
 bindsym $mod+Shift+m exec $file_manager
 
 #QOL
-bindsym $mod+mod1+l exec swaylock
+bindsym $mod+mod1+l exec swaylock -C ~/.config/sway/config.d/utils/swaylock/config
 floating_modifier $mod normal
 bindsym $mod+Shift+r reload
 

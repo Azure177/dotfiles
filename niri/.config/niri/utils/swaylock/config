@@ -1,0 +1,14 @@
+image=~/dotfiles/niri/.config/niri/themes/Wallpapers/Cyberpunk-girl.png
+scaling=tile
+
+ignore-empty-password
+show-failed-attempts
+
+indicator-caps-lock
+indicator-radius=75
+indicator-thickness=5
+indicator-idle-visible
+
+font=JetBrainsMono Nerd Font
+font-size=20
+
