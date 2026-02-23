@@ -6,6 +6,9 @@
 // Input device configuration.
 // Find the full list of options on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Input
+include "./defaults/Inputs.kdl"
+include "./defaults/Display.kdl"
+include "./defaults/Binds.kdl"
 input {
     keyboard {
         xkb {
@@ -255,7 +258,7 @@ layout {
 // See the binds section below for more spawn examples.
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "waybar"
+// spawn-at-startup "waybar"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
