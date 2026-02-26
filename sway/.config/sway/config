@@ -1,6 +1,6 @@
 
 # Read `man 5 sway` for a complete reference.
-exec env XDG_CURRENT_DESKTOP sway
+exec_always export XDG_CURRENT_DESKTOP='sway'
 
 include ~/.config/sway/config.d/variables
 include ~/.config/sway/config.d/keybinds
@@ -9,5 +9,7 @@ include ~/.config/sway/config.d/defaults
 
 exec --no-startup-id /usr/lib/xdg-desktop-portal-wlr
 exec --no-startup-id /usr/lib/xdg-desktop-portal
+
+exec_always pkill waybar; waybar
 
 include /etc/sway/config.d/*

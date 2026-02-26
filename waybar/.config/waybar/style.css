@@ -1,37 +1,39 @@
+/* Global defaults */
 * {
     font-family: "JetBrainsMono Nerd Font", monospace;
-    font-size: 14px;
-    padding: 0 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
 }
 
-window#waybar {
-    background-color: #0e0e0f; /* near-black */
-    color: #cfcfcf; /* default muted white */
+/* Make the bar itself transparent and space-less */
+window#waybar { 
+    background: transparent;
+    color: #0BB816;
 }
 
-/* === Module Colors (Muted Cyberpunk) === */
+/* Tight module layout: only content takes space */
+.modules-left > widget > label,
+.modules-center > widget > label,
+.modules-right > widget > label { padding: 0 6px; }
+
+/* Workspaces: text only, no pill background */
 #workspaces button {
-    color: #a78bfa; /* muted purple */
-    margin: 0 4px;
-    padding: 2px 8px;
+    background: transparent;
+    padding: 0 6px;
 }
+#workspaces button.focused { color: #5E84B9; }
+#workspaces button.urgent { color: #ff1744; }
 
-#workspaces button.focused {
-    background-color: #27272a;
-    border-radius: 6px;
-}
+/* Neon text accents, no backgrounds */
+#clock      { color: #39ff14; }
+#cpu        { color: #ffea00; }
+#memory     { color: #ff9100; }
+#network    { color: #00b0ff; }
+#pulseaudio { color: #f500ff; }
+#battery    { color: #76ff03; }
 
-#window {
-    color: #a78bfa; /* muted purple */
-    margin: 0 4px;
-    padding: 2px 8px;
-}
-
-/* === Spacing === */
-#pulseaudio, #backlight, #network, #bluetooth{
-    margin: 0 6px;
-}
-
-#bluetooth {
-    color:#5585D8
-}
+/* OPTIONAL: if you want a single module to have contrast, enable this by adding a background only to that module */

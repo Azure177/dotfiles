@@ -1,18 +1,6 @@
 {
-    "layer": "top",
-    "position": "top",
-    "height": 30,
-    "modules-center": ["sway/workspaces"],
-
-    "sway/workspaces": {
-        "format": "{icon}",
-        "disable-scroll": true,
-        "all-outputs": true
-    }
-
-    // "bluetooth": {
-    //     "on-click":
-    //     "blueman-manager"
-    // }
+    "include": [
+        "~/.config/waybar/base.jsonc",
+        "~/.config/waybar/${XDG_CURRENT_DESKTOP}.jsonc"
+    ]
 }
-

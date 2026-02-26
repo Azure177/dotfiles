@@ -1,0 +1,9 @@
+{
+    "modules-center": ["sway/workspaces"],
+
+    "sway/workspaces": {
+        "format": "{icon}",
+        "disable-scroll": true,
+        "all-outputs": true
+    }
+}

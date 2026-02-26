@@ -1,0 +1,8 @@
+{
+    "modules-left": ["niri/workspaces","niri/window"],
+
+    "niri/workspaces": {
+        "format": "{index}",
+        "current-only": true
+    }
+}

@@ -4,6 +4,7 @@
 // spawn-at-startup "waybar"
 spawn-at-startup "awww-daemon"
 spawn-at-startup "bash" "-c" "awww img --resize no ~/.config/niri/themes/Wallpapers/Cyberpunk-girl.png"
+spawn-at-startup "bash" "-c" "pkill waybar; waybar"
 spawn-at-startup "foot"
 
 // Client-side-decorations

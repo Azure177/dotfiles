@@ -3,9 +3,9 @@
 xwayland enable
 
 # Waybar
-bar {
-    swaybar_command waybar
-}
+# bar {
+#     swaybar_command waybar
+# }
 
 # Defaults
 default_orientation vertical
