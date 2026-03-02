@@ -1,7 +1,7 @@
 /* Global defaults */
 * {
     font-family: "JetBrainsMono Nerd Font", monospace;
-    font-size: 16px;
+    font-size: 18px;
     border: none;
     border-radius: 0;
     min-height: 0;
@@ -9,31 +9,18 @@
     margin: 0;
 }
 
-/* Make the bar itself transparent and space-less */
 window#waybar { 
     background: transparent;
-    color: #0BB816;
+    color: #8ED4C5;
 }
 
-/* Tight module layout: only content takes space */
-.modules-left > widget > label,
-.modules-center > widget > label,
-.modules-right > widget > label { padding: 0 6px; }
-
-/* Workspaces: text only, no pill background */
-#workspaces button {
-    background: transparent;
-    padding: 0 6px;
-}
-#workspaces button.focused { color: #5E84B9; }
+#workspaces button { padding: 0 6px; }
+#workspaces button.focused { color: #AAD290; }
 #workspaces button.urgent { color: #ff1744; }
 
-/* Neon text accents, no backgrounds */
 #clock      { color: #39ff14; }
 #cpu        { color: #ffea00; }
 #memory     { color: #ff9100; }
 #network    { color: #00b0ff; }
 #pulseaudio { color: #f500ff; }
 #battery    { color: #76ff03; }
-
-/* OPTIONAL: if you want a single module to have contrast, enable this by adding a background only to that module */

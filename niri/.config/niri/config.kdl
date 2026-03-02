@@ -3,10 +3,8 @@
 // Check the wiki for a full description of the configuration:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Introduction
 
-// Find the full list of options on the wiki:
-// https://github.com/YaLTeR/niri/wiki/Configuration:-Input
-include "defaults/Inputs.kdl"
-include "defaults/Binds.kdl"
-include "defaults/Monitors.kdl"
-include "defaults/Layout.kdl"
-
+include "Defaults/Binds.kdl"
+include "Defaults/Inputs.kdl"
+include "Defaults/Layout.kdl"
+include "Defaults/Monitors.kdl"
+include "Defaults/Misc.kdl"

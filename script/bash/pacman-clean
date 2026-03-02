@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+mapfile -t orphans < <(pacman -Qtdq)
+
+if ((${#orphans[@]} == 0)); then
+    echo "No orphan packages found"
+    exit 0
+fi
+
+printf "%s\n" "${orphans[@]}" "$(date)" >> ~/.local/bin/deleted-packages.txt
+printf "< %s >\n" "${orphans[@]}"
+echo "Erase All Packages?"
+echo "1-Yes"
+read -r yn
+
+if [[ "$yn" == "1" ]]; then
+    sudo pacman -Rns "${orphans[@]}"
+else
+    echo "Aborted."
+fi

@@ -1,0 +1,21 @@
+// Note that running niri as a session supports xdg-desktop-autostart
+
+spawn-at-startup "bash" "-c" "awww img --resize no ~/.config/niri/Themes/Wallpapers/Cyberpunk-girl.png"
+spawn-at-startup "bash" "-c" "pkill waybar; waybar"
+spawn-at-startup "foot"
+
+// Client-side-decorations
+// After enabling or disabling this, you need to restart the apps for this to take effect.
+prefer-no-csd
+animations { slowdown 3; } // Values below 1 speed them up instead.
+
+window-rule {
+    geometry-corner-radius 10
+    clip-to-geometry true
+}
+
+// The path is formatted with strftime(3) to give you the screenshot date and time.
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+// You can also set this to null to disable saving screenshots to disk.
+// screenshot-path null

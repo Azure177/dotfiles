@@ -1,0 +1,11 @@
+input {
+    keyboard {
+        xkb {
+            // For more information, see xkeyboard-config(7).
+        }
+        numlock
+    }
+    // Setting max-scroll-amount="0%" makes it work only on windows already fully on screen.
+    focus-follows-mouse max-scroll-amount="0%"
+    warp-mouse-to-focus
+}

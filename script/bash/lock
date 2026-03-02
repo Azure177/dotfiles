@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+command -v swaylock 1>/dev/null 2>&1 && \
+    exec swaylock -C ~/.config/"$XDG_CURRENT_DESKTOP"/Themes/Utils/swaylock-config

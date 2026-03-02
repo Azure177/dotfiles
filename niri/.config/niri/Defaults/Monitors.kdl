@@ -1,0 +1,10 @@
+// Find more information on the wiki:
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
+
+output "eDP-1" {
+    // Run `niri msg outputs` while inside a niri instance to list all outputs and their modes.
+    mode "1600x900@60"
+    scale 1
+    // normal, 90, 180, 270, flipped, flipped-90, flipped-180 and flipped-270.
+    transform "normal"
+}
