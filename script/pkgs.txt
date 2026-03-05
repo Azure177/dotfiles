@@ -1,3 +1,4 @@
+base-devel
 clang
 fastfetch
 flatpak
