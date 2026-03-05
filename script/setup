@@ -5,6 +5,7 @@ set -euo pipefail
 
 mapfile -t PKGS < pkgs.txt
 mapfile -t FLPKS < flatpaks.txt
+mapfile -t AUR < pkgs.txt
 
 my_defaults() {
     printf '\n'
@@ -13,26 +14,36 @@ my_defaults() {
         "alias vi='nvim'" \
         "alias c='clear'" \
         "export OLLAMA_OFFLINE=true" \
-        "export MANPAGER='nvim +Man!'"
+        "export MANPAGER='nvim +Man!'" \
+        >> ~/.bashrc
     }
 
 echo "Starting Setup..."
-
-touch ~/.bashrc
-if [[! grep -q "set -o vi" ~/.bashrc ]]; then
+touch "$HOME/.bashrc"
+if ! grep -q "set -o vi" ~/.bashrc; then
     echo "updating bashrc..."
-    my_defaults >> ~/.bashrc
+    my_defaults
 fi
 
-echo "installing packages..."
-sudo pacman -Syu --needed --noconfirm "${PKGS[@]}"
-flatpak install -y "${FLPKS[@]}"
-
-if [[ ! -d ~/yay ]]
-    git clone https://aur.archlinux.org/yay.git
-    cd ~/yay && makepkg -si
+echo "installing packages..."~
+if [[ ! -f "$HOME/.local/setup_done" ]]; then
+    sudo pacman -Syu --noconfirm
+    sudo pacman -Syu --needed --noconfirm "${PKGS[@]}"
 fi
 
-cd ~ && yay awww-bin
+if [[ ! -d "$HOME/yay" ]]; then
+    git clone https://aur.archlinux.org/yay.git  "$HOME/yay"
+    cd "$HOME/yay" && makepkg -si --no-confirm
+    rm -rf "$HOME/yay"
+fi
 
-cd ~/dotfiles && stow -nv {foot,fuzzel,niri,nvim,waybar}
+echo "Installing AUR packages..."
+yay -S --needed --noconfirm "${AUR[@]}"
+
+echo "Installing flatpaks..."
+flatpak install -y flathub "${FLPKS[@]}"
+
+cd "$HOME/Configs" && stow foot fuzzel niri nvim waybar
+
+touch "$HOME/.local/setup_done"
+echo "Setup complete."

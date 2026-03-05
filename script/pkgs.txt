@@ -28,3 +28,4 @@ waybar
 wget
 xdg-desktop-portal-wlr
 xorg-xwayland
+xwayland-satellite
