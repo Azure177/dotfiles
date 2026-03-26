@@ -7,3 +7,5 @@ vim.keymap.set("n", "<C-c>", ":nohl<CR>") --clears search highlights
 vim.keymap.set("n", "x", '"_x')
 
 vim.keymap.set("n", "<leader>t", ":terminal")
+vim.keymap.set("n", "<leader>fm", "<Cmd>lua require('telescope.builtin').man_pages({sections={'ALL'}})<CR>")
+

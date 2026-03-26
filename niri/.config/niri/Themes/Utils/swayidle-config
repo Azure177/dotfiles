@@ -1,2 +1,2 @@
 timeout 300 'niri msg action power-off-monitors'
-timeout 305 lock  resume 'niri msg action power-on-monitors'
+timeout 305 "$HOME/.local/bin/lock"  resume 'niri msg action power-on-monitors'

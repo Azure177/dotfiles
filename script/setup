@@ -28,7 +28,7 @@ fi
 echo "installing packages..."~
 if [[ ! -f "$HOME/.local/setup_done" ]]; then
     sudo pacman -Syu --noconfirm
-    sudo pacman -Syu --needed --noconfirm "${PKGS[@]}"
+    sudo pacman -S --needed --noconfirm "${PKGS[@]}"
 fi
 
 if [[ ! -d "$HOME/yay" ]]; then

@@ -10,10 +10,14 @@ binds {
 
     Super+Return hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
     Super+A hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Super+Alt+L hotkey-overlay-title="Lock-Screen: swaylock" { spawn "bash" "-c" "lock"; }
+    Super+Alt+L hotkey-overlay-title="Lock-Screen: swaylock" { spawn "bash" "-c" "~/.local/bin/lock"; }
 
     //APPS
     Super+Z hotkey-overlay-title="Browser: Zen" {spawn "app.zen_browser.zen"; }
+    Super+S hotkey-overlay-title="PDF: Sioyek" {spawn "bash" "-c" "~/.local/Sioyek/squashfs-root/usr/bin/sioyek"; }
+    // Waybar
+    Super+Shift+W { spawn "bash" "-c" "killall -SIGUSR1 waybar"; }
+    Super+D { spawn "bash" "-c" "killall -SIGUSR2 waybar"; }
 
     // Example volume keys mappings for PipeWire & WirePlumber.
     // The allow-when-locked=true property makes them work even when the session is locked.
@@ -63,10 +67,9 @@ binds {
     Super+Shift+8 { move-column-to-workspace 8; }
     Super+Shift+9 { move-column-to-workspace 9; }
 
-    Super+Tab { focus-workspace-previous; }
-
     Super+BracketLeft  { consume-or-expel-window-left; }
     Super+BracketRight { consume-or-expel-window-right; }
+    Super+M { focus-monitor-next; }
 
     Super+R { switch-preset-column-width; }
     Super+Shift+R { switch-preset-window-height; }
@@ -92,4 +95,5 @@ binds {
     Super+Shift+E { quit; }
     Ctrl+Alt+Delete { quit; }
     Super+Shift+P { power-off-monitors; }
+
 }

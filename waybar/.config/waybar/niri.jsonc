@@ -2,7 +2,12 @@
     "modules-left": ["niri/workspaces","niri/window"],
 
     "niri/workspaces": {
-        "format": "{index}",
-        "current-only": true
+        "all-outputs": true,
+        "current-only": true,
+        "format": "{value}"
+    },
+    "niri/window": {
+        "format": "{}",
+        "expand": true
     }
 }

@@ -1,13 +1,22 @@
 // Note that running niri as a session supports xdg-desktop-autostart
 
+hotkey-overlay { skip-at-startup; }
 spawn-at-startup "bash" "-c" "awww img --resize no ~/.config/niri/Themes/Wallpapers/Cyberpunk-girl.png"
-spawn-at-startup "bash" "-c" "pkill waybar; waybar"
-spawn-at-startup "foot"
 
 // Client-side-decorations
 // After enabling or disabling this, you need to restart the apps for this to take effect.
 prefer-no-csd
 animations { slowdown 3; } // Values below 1 speed them up instead.
+
+window-rule {
+    match app-id="sioyek"
+    open-maximized true
+}
+
+window-rule {
+    match app-id="foot"
+    open-floating true
+}
 
 window-rule {
     geometry-corner-radius 10
