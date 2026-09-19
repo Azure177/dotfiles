@@ -28,5 +28,6 @@ alias hdmi-stereo='pactl set-card-profile alsa_card.pci-0000_00_1f.3 output:hdmi
 export OLLAMA_OFFLINE=true
 export MANPAGER='nvim +Man!'
 export PATH="$HOME/.local/bin:$PATH"
+
 # For BLUEJ to work with wayland-satellite
 export _JAVA_AWT_WM_NONREPARENTING=1

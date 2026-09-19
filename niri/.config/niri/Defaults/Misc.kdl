@@ -23,8 +23,17 @@ window-rule {
     clip-to-geometry true
 }
 
+layer-rule {
+    match namespace="^launcher$"
+    background-effect {
+        blur true
+        xray false
+    }
+}
+
 // The path is formatted with strftime(3) to give you the screenshot date and time.
-screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+screenshot-path "~/Pictures/Screenshots/Assignment %H-%M-%S.png"
+// screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 // You can also set this to null to disable saving screenshots to disk.
 // screenshot-path null

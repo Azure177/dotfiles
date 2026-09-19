@@ -1,5 +1,6 @@
 {
-    "modules-left": ["niri/workspaces","niri/window"],
+    "modules-left": ["niri/workspaces"],
+    "modules-center": ["niri/window"],
 
     "niri/workspaces": {
         "all-outputs": true,
@@ -7,7 +8,6 @@
         "format": "{value}"
     },
     "niri/window": {
-        "format": "{}",
-        "expand": true
+        "format": "{}"
     }
 }
